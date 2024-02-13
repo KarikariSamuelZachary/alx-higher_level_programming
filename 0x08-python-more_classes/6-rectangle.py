@@ -19,6 +19,7 @@ class Rectangle():
         """
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     def __str__(self):
         """the __str__ method of the Rectangle instance"""
