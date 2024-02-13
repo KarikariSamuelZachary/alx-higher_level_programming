@@ -10,10 +10,9 @@ class Rectangle():
 
     number_of_instances = 0
 
-
     def __init__(self, height=0, width=0):
         """Sets the attributes for the rectangle class
-        
+
         Args:
             width (int) = width of the rectangle
             height (int) = height of the triangle
