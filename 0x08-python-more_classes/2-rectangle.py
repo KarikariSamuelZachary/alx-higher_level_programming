@@ -2,20 +2,20 @@
 """
 Rectangle module.
 
-This module contains a class that represent rectangles.
+This module contains a class that defines a rectangle.
 
 """
 
 
 class Rectangle():
-    """Defines a Rectangle."""
-    
-    def __init__(self, height=0, width=0):
-        """Sets the attributes for the Rectangle object.
+    """Defines a rectangle."""
+
+    def __init__(self, width=0, height=0):
+        """Sets the necessary attributes for the Rectangle object.
 
         Args:
-            width (int) = width of the rectangle.
-            height (int) = height of the triangle.
+            width (int): the width of the rectangle.
+            height (int): the height of the rectangle.
         """
         self.width = width
         self.height = height
@@ -37,7 +37,7 @@ class Rectangle():
 
     @property
     def height(self):
-        """getter for the height attribute."""
+        """Get or set the height of the rectangle."""
         return self.__height
 
     @height.setter
@@ -46,17 +46,16 @@ class Rectangle():
             if value >= 0:
                 self.__height = value
             else:
-                raise ValueError("height must be >=0")
+                raise ValueError("height must be >= 0")
         else:
             raise TypeError("height must be an integer")
 
     def area(self):
-        """Method that returns the area of a rectangle."""
+        """Returns the current rectangle area."""
         return self.__width * self.__height
 
     def perimeter(self):
-        """Method that returns the perimeter of a rectangle."""
-        if self.__width and self.__height == 0:
+        """Returns the current rectangle perimeter."""
+        if self.__width is 0 or self.__height is 0:
             return 0
-        else:
-            return self.__height * 2 + self.__width * 2
+        return self.__width * 2 + self.__height * 2
