@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 
 """
+Rectangle module. 
+
 This module contains a class that represent rectangles
 """
 
 
 class Rectangle():
-    """Rectangle Definiton"""
+    """Defines a Rectangle"""
     def __init__(self, height=0, width=0):
         """Sets the attributes for the rectangle class
 
