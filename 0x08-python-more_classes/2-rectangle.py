@@ -1,28 +1,28 @@
 #!/usr/bin/python3
 """
-Rectangle module
+Rectangle module.
 
-This module contains a class that represent rectangles
+This module contains a class that represent rectangles.
 
 """
 
 
 class Rectangle():
-    """Rectangle Definiton"""
+    """Defines a Rectangle."""
     
     def __init__(self, height=0, width=0):
-        """Sets the attributes for the rectangle class
+        """Sets the attributes for the Rectangle object.
 
         Args:
-            width (int) = width of the rectangle
-            height (int) = height of the triangle
+            width (int) = width of the rectangle.
+            height (int) = height of the triangle.
         """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """getter for the width attrbute"""
+        """Get or set the width of the rectangle."""
         return self.__width
 
     @width.setter
@@ -37,7 +37,7 @@ class Rectangle():
 
     @property
     def height(self):
-        """getter for the height attribute"""
+        """getter for the height attribute."""
         return self.__height
 
     @height.setter
@@ -51,11 +51,11 @@ class Rectangle():
             raise TypeError("height must be an integer")
 
     def area(self):
-        """Method that returns the area of a rectangle"""
+        """Method that returns the area of a rectangle."""
         return self.__width * self.__height
 
     def perimeter(self):
-        """Method that returns the perimeter of a rectangle"""
+        """Method that returns the perimeter of a rectangle."""
         if self.__width and self.__height == 0:
             return 0
         else:
