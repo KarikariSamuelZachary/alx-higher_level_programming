@@ -1,27 +1,27 @@
 #!/usr/bin/python3
-
 """
-Rectangle module. 
+Rectangle module.
 
-This module contains a class that represent rectangles
+This module contains a class that defines a rectangle.
 """
 
 
 class Rectangle():
-    """Defines a Rectangle"""
-    def __init__(self, height=0, width=0):
-        """Sets the attributes for the rectangle class
+    """Defines a rectangle."""
+
+    def __init__(self, width=0, height=0):
+        """Sets the necessary attributes for the Rectangle object.
 
         Args:
-            width (int) = width of the rectangle
-            height (int) = height of the triangle
+            width (int): the width of the rectangle.
+            height (int): the height of the rectangle.
         """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """getter for the width attrbute"""
+        """Get or set the width of the rectangle."""
         return self.__width
 
     @width.setter
@@ -36,7 +36,7 @@ class Rectangle():
 
     @property
     def height(self):
-        """getter for the height attribute"""
+        """Get or set the height of the rectangle."""
         return self.__height
 
     @height.setter
@@ -45,6 +45,6 @@ class Rectangle():
             if value >= 0:
                 self.__height = value
             else:
-                raise ValueError("height must be >=0")
+                raise ValueError("height must be >= 0")
         else:
-            raise TypeError("height must be an integer")
+            raise TypeError("height must be an i")
