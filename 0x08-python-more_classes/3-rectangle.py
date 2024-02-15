@@ -7,7 +7,7 @@ This module contains a class that represent rectangles
 
 class Rectangle():
     """Rectangle Definiton"""
-    def __init__(self, height=0, width=0):
+    def __init__(self, width=0, height=0):
         """Sets the attributes for the rectangle class
 
         Args:
@@ -20,7 +20,7 @@ class Rectangle():
     def __str__(self):
         """the __str__ method of the Rectangle instance"""
         rectangle = ""
-        if self.__width > 0 and self.__height > 0:
+        if self.__width > 0 or self.__height > 0:
             for y in range(self.__height):
                 rectangle += '#' * self.width + '\n'
         return rectangle[:-1]
