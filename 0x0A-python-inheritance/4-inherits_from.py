@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 """inherits_from module
 
 function that compares an object with an instance.
