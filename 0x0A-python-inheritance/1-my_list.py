@@ -9,9 +9,6 @@ from the Base Class List
 class MyList(list):
     """Defines the MyList Class"""
 
-    def __init__(self):
-        pass
-
     def print_sorted(self):
         """Prints the list but in sorted ascending order"""
         print(sorted(self))
