@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """Lookup Module
 
 Contains a lookup functon that displays all
