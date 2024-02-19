@@ -3,8 +3,6 @@
 
 Contans a subclass My List that inherits
 from the Base Class List
-
-
 """
 
 
