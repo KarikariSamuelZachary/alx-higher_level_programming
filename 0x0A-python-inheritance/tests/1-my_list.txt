@@ -1,12 +1,13 @@
-The ``MyList`` module
+The ''MyList'' module
 ==========================
 
-Using ``MyList``
+Using ''MyList''
 ---------------------
 
-First import ``MyList`` from the ``MyList`` module:
+First import ''MyList'' from the ''MyList'' module:
 
-	>>> MyList = __import__('1-my_list').MyList
+	>>> MyList = __import__('1-my_list.py').MyList
+
 
 Now use it:
 
